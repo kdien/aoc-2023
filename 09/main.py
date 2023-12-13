@@ -24,8 +24,8 @@ if __name__ == "__main__":
         find_diff(l, next_val_list)
         next_val_lists.append(next_val_list)
 
-    totalPartOne = 0
+    total_part_1 = 0
     for i in range(0, len(input)):
-        totalPartOne += input[i][-1] + sum(next_val_lists[i])
+        total_part_1 += input[i][-1] + sum(next_val_lists[i])
 
-    print("Part 1:", totalPartOne)
+    print("Part 1:", total_part_1)

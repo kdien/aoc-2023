@@ -77,11 +77,11 @@ if __name__ == "__main__":
 
     hands = sorted(hands, key=cmp_to_key(hand_cmp))
 
-    totalPartOne = 0
+    total_part_1 = 0
     for i in range(0, len(hands)):
-        totalPartOne += hands[i]["bid"] * (i + 1)
+        total_part_1 += hands[i]["bid"] * (i + 1)
 
     for i, v in enumerate(hands):
         print(f"{v} - {v['bid']} * {i+1}")
 
-    print("Part 1:", totalPartOne)
+    print("Part 1:", total_part_1)
